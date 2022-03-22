@@ -1,0 +1,15 @@
+# dependencies
+/dist
+/node_modules
+output
+output_resource
+
+src/types/intl.ts
+
+.vscode
+
+yarn-debug.log*
+yarn-error.log*
+yarn.lock
+
+.DS_Store

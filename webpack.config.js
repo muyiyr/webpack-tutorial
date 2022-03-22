@@ -2,6 +2,7 @@ const path = require('path')
 const TerserPlugin = require('terser-webpack-plugin');
 const MinCssExtractPlugin = require('mini-css-extract-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
     entry: './src/index.js',
@@ -53,6 +54,13 @@ module.exports = {
                 '**/*',
                 path.join(process.cwd(),'build/**/*')
             ],
+        }),
+        new HtmlWebpackPlugin({
+            title: 'webpack5从入门到放弃',
+            // filename:"test/content.html",
+            meta: {
+                description:'webpack5'
+            }
         })
     ]
 };

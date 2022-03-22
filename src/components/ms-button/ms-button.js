@@ -1,9 +1,10 @@
 import './ms-button.scss'
 class MsButton{
+    buttonCssClass = 'ms-button';
     render() {
         const button = document.createElement('button');
         button.innerHTML = 'MSButton';
-        button.classList.add('ms-button');
+        button.classList.add(this.buttonCssClass);
         const body = document.querySelector("body")
         button.onclick = function () {
             const p = document.createElement('p');

@@ -1,5 +1,3 @@
-import hello from "./hello-world";
-import addImag from './add-image';
-
-hello();
-addImag();
+import MsButton from './components/ms-button/ms-button.js'
+const msButton = new MsButton();
+msButton.render();
